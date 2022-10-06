@@ -7,7 +7,7 @@ app.use(cors())
 app.use(express.json())
 app.use('/api', router)
 
-app.listen(8800, async () => {
+app.listen(process.env.PORT || 8800, async () => {
     
     console.log(`the server has started on port 8800`)    
 })
